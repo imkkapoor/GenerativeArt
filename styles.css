@@ -1,0 +1,80 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling on content pages */
+}
+
+nav {
+    background-color: #111; /* Dark background for the navbar */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+    text-align: center; /* Center align the navigation links */
+}
+
+nav a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for the links */
+    padding: 10px 15px; /* Padding around the links */
+    display: inline-block; /* Align links horizontally */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    background-color: #333; /* Darker background on hover */
+    color: #1e90ff; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+.content {
+    margin-top: 60px; /* To prevent content from hiding behind the fixed nav */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+#planets-canvas, #waves-canvas, #starburst-canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
