@@ -15,11 +15,11 @@ function draw() {
         ellipse(x, y, starSize, starSize);
     }
 
-    let numPlanets = 5;
+    let numPlanets = 9;
     for (let i = 0; i < numPlanets; i++) {
-        let planetX = width / 2 + cos(frameCount * 0.01 + i) * (200 + i * 70);
+        let planetX = width / 2 + cos(frameCount * 0.01 + i) * (200 + i * 60);
         let planetY = height / 2 + sin(frameCount * 0.01 + i) * (200 + i * 20);
-        let planetSize = 20 + i * 20;
+        let planetSize = 20 + i * 10;
         fill(100 + i * 30, 100, 255 - i * 50);
         ellipse(planetX, planetY, planetSize, planetSize);
     }

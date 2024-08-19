@@ -1,3 +1,5 @@
+
+
 let waveStars = [];
 
 function setup() {
@@ -19,7 +21,7 @@ function draw() {
     background(0);
 
     for (let y = 0; y < height; y += 5) {
-        let wave = sin(frameCount * 0.01 + y * 0.05) * 50;
+        let wave = sin(frameCount * 0.01 + y * 0.025) * 50;
         fill(150 + wave, 50 + wave / 2, 200 + wave / 4);
         rect(0, y, width, 5);
     }
@@ -29,3 +31,5 @@ function draw() {
         ellipse(star.x, star.y, star.size, star.size);
     }
 }
+
+
